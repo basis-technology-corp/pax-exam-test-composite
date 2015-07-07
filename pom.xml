@@ -23,7 +23,6 @@
     <properties>
         <pax.url.version>2.3.0</pax.url.version>
         <pax.exam.version>4.4.0</pax.exam.version>
-        <felix.version>4.4.1</felix.version>
         <osgi.framework.version>1.6.0</osgi.framework.version>
         <slf4j.version>1.7.5</slf4j.version>
     </properties>
@@ -59,10 +58,10 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.framework</artifactId>
-            <version>${felix.version}</version>
-            <scope>compile</scope>
+          <groupId>org.eclipse</groupId>
+          <artifactId>osgi</artifactId>
+          <version>3.10.0-v20140606-1445</version>
+          <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
