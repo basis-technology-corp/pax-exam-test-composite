@@ -21,16 +21,15 @@
     </scm>
     <url>http://github.com/basis-technology-corp/pax-exam-test-composite</url>
     <properties>
-        <pax.url.version>2.4.3</pax.url.version>
-        <pax.exam.version>4.7.0</pax.exam.version>
-        <osgi.framework.version>1.6.0</osgi.framework.version>
+        <pax.url.version>2.4.7</pax.url.version>
+        <pax.exam.version>4.9.1</pax.exam.version>
         <slf4j.version>1.7.5</slf4j.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -71,9 +70,18 @@
         </dependency>
         <dependency>
           <groupId>org.eclipse</groupId>
-          <artifactId>osgi</artifactId>
-          <version>3.10.0-v20140606-1445</version>
-          <scope>compile</scope>
+         <artifactId>osgi</artifactId>
+         <version>3.10.0-v20140606-1445</version>
+         <!--
+          <groupId>org.apache.felix</groupId>
+          <artifactId>org.apache.felix.framework</artifactId>
+          <version>5.4.0</version>
+          -->
+        </dependency>
+        <dependency>
+          <groupId>org.ops4j.pax.exam</groupId>
+          <artifactId>pax-exam-cm</artifactId>
+          <version>${pax.exam.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -82,10 +90,9 @@
             <version>${slf4j.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <scope>compile</scope>
-            <version>${slf4j.version}</version>
+          <groupId>org.slf4j</groupId>
+          <artifactId>osgi-over-slf4j</artifactId>
+          <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
 </project>
