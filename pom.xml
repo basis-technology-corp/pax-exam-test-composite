@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>pax-exam-test-composite</artifactId>
     <name>pax-exam-test-composite</name>
-    <version>0.0.10</version>
+    <version>0.0.11-SNAPSHOT</version>
     <parent>
         <artifactId>open-source-parent</artifactId>
         <groupId>com.basistech</groupId>
@@ -17,7 +17,7 @@
     <scm>
         <connection>scm:git:git@github.com:basis-technology-corp/pax-exam-test-composite.git</connection>
         <developerConnection>scm:git:git@github.com:basis-technology-corp/pax-exam-test-composite.git</developerConnection>
-        <tag>pax-exam-test-composite-0.0.10</tag>
+        <tag>HEAD</tag>
     </scm>
     <url>http://github.com/basis-technology-corp/pax-exam-test-composite</url>
     <properties>
